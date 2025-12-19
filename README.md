@@ -1,55 +1,64 @@
 <div align="center">
 
-# **ORDER PIZZA — UI TEST AUTOMATION FRAMEWORK**
+# **ORDER PIZZA — QA AUTOMATION CASE STUDY**
 
-*A clean & structured end-to-end test architecture.*
+*A structured and evolving test automation framework.*
+
+---
+
+## 🚧 **Project Status**
+
+**In progress / Actively evolving**
+Core end-to-end flows are implemented.
+New scenarios, refactors, and framework improvements are continuously added.
 
 ---
 
 ## **Context**
 
-This project validates the core user journeys of an online pizza
-ordering application using **BDD-driven UI automation**.
+This project focuses on automating the core user journeys of an online
+pizza ordering application.
 
-Each scenario reflects a **real customer interaction**,
+Each test flow mirrors a **real customer behavior**,
 from product selection to cart validation.
 
 ---
 
 ## **Objectives**
 
-Validate add-to-cart flow
-Verify quantity management
-Test custom pizza configuration
-Ensure cart behavior consistency
-Generate readable test reports
+Validate add-to-cart functionality
+Verify product quantity management
+Test custom pizza configuration flow
+Ensure cart consistency and empty-state behavior
+Produce clear and readable automation reports
 
 ---
 
-## **Test Scenarios Covered**
+## **Covered User Flows**
 
 Add pizza to cart
 Increase product quantity
 Remove product from cart
 Verify empty cart message
-Create your own pizza with random toppings
-Verify cart quantity
+Create your own pizza with dynamic toppings
+Validate cart quantity
 
 ---
 
-## **Framework Design**
+## **Methods**
 
+UI Automation Testing
+BDD-Driven Scenarios
+Functional Validation
+Dynamic Element Handling
 Page Object Model (POM)
-Cucumber BDD (Gherkin)
-Reusable utility methods
-Centralized driver & config management
-Hooks for lifecycle control
+Cucumber + TestNG Integration
 
 ---
 
-## **Tech Stack**
+## **Tools Used**
 
-### **Core**
+### **Core Stack**
 
 Java 17
 Selenium WebDriver
@@ -63,14 +72,14 @@ Allure Report
 
 ---
 
-## **Project Structure**
+## **Framework Structure**
 
 ```
-hooks          → scenario lifecycle management  
-pages          → UI elements & page actions  
-stepDefinitions→ Gherkin step implementations  
-utilities      → driver, config & reusable helpers  
-features       → business-readable test scenarios  
+hooks           → scenario lifecycle management  
+pages           → UI elements & page actions  
+stepDefinitions → Gherkin step implementations  
+utilities       → driver, config & reusable helpers  
+features        → business-readable scenarios  
 ```
 
 ---
@@ -107,16 +116,19 @@ allure serve target/allure-results
 
 ---
 
-## **Key Takeaways**
+## **Planned Enhancements**
 
-Readable & maintainable test design
-Strong separation of concerns
-Realistic user-focused scenarios
-Clean and visual reporting
+Additional negative scenarios
+Reusable method refactoring
+Tag-based execution
+Parallel test runs
+CI/CD pipeline integration
+
+---
 
 
-📁 *This framework is part of a growing QA portfolio and is designed
-to demonstrate real-world automation practices.*
+📁 *This repository represents an evolving QA automation framework
+and is part of an ongoing test-engineering portfolio.*
 
 ![done](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTZjNzZ6N2ZrcTIyN2NrdmR6end5c3o3cW9lbW9nYXV1bnRsZ2RxNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DaEjBX6gkJyR9nFtL7/giphy.gif)
 
